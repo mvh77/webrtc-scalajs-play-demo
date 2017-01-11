@@ -20,10 +20,10 @@
     <!-- actors logging -->
     <logger name="akka.actor" level="INFO"/>
 
-    <logger name="actors.UserParentActor" level="INFO"/>
-    <logger name="actors.UserActor" level="INFO"/>
-    <logger name="actors.StocksActor" level="INFO"/>
-    <logger name="actors.StockActor" level="INFO"/>
+    <logger name="actors.RoomsActor" level="INFO"/>
+    <logger name="actors.RoomActor" level="INFO"/>
+    <logger name="actors.WebSocketsActor" level="INFO"/>
+    <logger name="actors.WebSocketActor" level="INFO"/>
 
     <!-- controllers -->
     <logger name="controllers" level="INFO"/>

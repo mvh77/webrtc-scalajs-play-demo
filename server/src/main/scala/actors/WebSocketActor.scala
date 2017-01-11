@@ -14,7 +14,7 @@ class WebSocketsActor @Inject() (@Named("roomsActor") roomsActor: ActorRef) exte
   def receive = LoggingReceive {
     case Create(user, responseTargetActor) =>
       log.info(s"creating new websocket actor for user $user")
-      // get or create the StockActor for the symbol and forward this message
+      // get or create the websocket actor for the symbol and forward this message
       sender ! context.child(user).getOrElse {
         context.actorOf(Props(new WebSocketActor(user, responseTargetActor, roomsActor)), user)
       }
