@@ -90,11 +90,7 @@ class WebRtcController @Inject()(@Named("webSocketsActor") webSocketsActor: Acto
     // Use guice assisted injection to instantiate and configure the child actor.
     import akka.pattern.ask
     import scala.concurrent.duration._
-
-    val wsActorFuture = {
-      implicit val timeout = Timeout(100.millis)
-      (webSocketsActor ? Create(name, responseTargetActor)).mapTo[ActorRef]
-    }
-    wsActorFuture
+    implicit val timeout = Timeout(100.millis)
+    (webSocketsActor ? Create(name, responseTargetActor)).mapTo[ActorRef]
   }
 }
