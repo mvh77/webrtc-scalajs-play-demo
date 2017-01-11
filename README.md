@@ -1,8 +1,8 @@
-# WebRTC - ScalaJS - Play - Akka Stream videoconf demo
+# WebRTC - Scala.js - Play - Akka Stream videoconf demo
 
 Simple demo combining the following technologies:
 - WebRTC (tested with Chrome, should work with Firefox, definitely doesn't work with IE)
-- ScalaJs 0.6.14
+- Scala.js 0.6.14
 - Play Framework 2.5.10
 - Akka Stream 2.4.12
 - [Udash](http://udash.io/) 0.4.0
