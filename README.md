@@ -1,4 +1,4 @@
-# WebRTC - ScalaJS - Play - Akka Stream teleconference demo
+# WebRTC - ScalaJS - Play - Akka Stream videoconf demo
 
 Simple demo combining the following technologies:
 - WebRTC (tested with Chrome, should work with Firefox, definitely doesn't work with IE)
